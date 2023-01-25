@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
-  <div class="flex justify-center content-center">
-    <div>
+  <div class="flex justify-center">
+    <div class="w-80">
       <div class="mb-10 flex text-lg font-bold">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +107,7 @@
             id="default-checkbox"
             type="checkbox"
             value=""
-            class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600"
+            class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600"
           />
           <label
             for="default-checkbox"
@@ -119,13 +119,13 @@
       </div>
       <button
         type="button"
-        class="mr-2 mt-5 mb-2 w-full rounded-lg bg-[#191D3A] px-5 py-2.5 text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+        class="mr-2 mt-5 mb-2 w-full rounded-lg bg-[#191D3A] px-5 py-2.5 text-sm font-medium text-white"
       >
         Login
       </button>
       <button
         type="button"
-        class="mr-2 mt-8 mb-2 flex w-full justify-center rounded-lg border border-black px-5 py-2.5 text-sm font-medium text-black focus:outline-none focus:ring-4 focus:ring-blue-300"
+        class="mr-2 mt-8 mb-2 flex w-full justify-center rounded-lg border border-black px-5 py-2.5 text-sm font-medium text-black"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
