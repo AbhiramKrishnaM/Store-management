@@ -1,6 +1,7 @@
 <script setup>
 import Login from "@/components/section/login/index.vue";
 import CustomerCard from "../components/section/customerCard.vue";
+import ProductCard from "../components/section/productCard.vue";
 
 const customerCard = {
   image: {
@@ -13,11 +14,25 @@ const customerCard = {
     amount: 1200,
   },
 };
+
+const productCard = {
+  image: {
+    path: "https://freesvg.org/img/monkey_nobg.png",
+    alt: "monkey",
+  },
+  product: {
+    name: "Monki the monkey",
+    amount: 30,
+    totalSold: 150,
+    discountedAmount: 40,
+  },
+};
 </script>
 
 <template>
   <div>
     <Login />
     <CustomerCard v-bind="customerCard" />
+    <ProductCard v-bind="productCard" />
   </div>
 </template>

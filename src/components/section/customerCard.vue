@@ -1,3 +1,11 @@
+<script setup>
+const props = defineProps({
+  image: Object,
+  name: String,
+  purchase: Object,
+});
+</script>
+
 <template>
   <div class="flex">
     <img class="w-30 h-14 rounded-full" :src="image.path" :alt="image.alt" />
@@ -25,11 +33,3 @@
     </div>
   </div>
 </template>
-
-<script setup>
-const props = defineProps({
-  image: Object,
-  name: String,
-  purchase: Object,
-});
-</script>
