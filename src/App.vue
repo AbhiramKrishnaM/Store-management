@@ -1,10 +1,8 @@
-<script setup>
-import { RouterLink, RouterView } from "vue-router";
-</script>
+<script setup></script>
 
 <template>
-  <main class="grid grid-cols-12">
-    <div class="h-[100vh] bg-red-400">hey</div>
-    <div class="col-span-11 h-[100vh] bg-red-700">heyy</div>
+  <main class="h-screen flex flex-col lg:flex-row">
+    <div class="bg-red-400 h-[100px] lg:w-1/12 lg:h-screen p-5">hey</div>
+    <div class="bg-red-700 h-full lg:w-11/12 p-5">heyy</div>
   </main>
 </template>
