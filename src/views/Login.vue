@@ -64,5 +64,6 @@ const cardInfo = {
     <!-- <UserAvatarInfo v-bind="customerInfo" />
     <SpecialPackage v-bind="cardInfo" />
     <NewVersion /> -->
+    <Icon icon="material-symbols:list-alt" />
   </div>
 </template>
