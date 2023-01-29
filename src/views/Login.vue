@@ -4,6 +4,7 @@ import CustomerCard from "../components/section/customerCard.vue";
 import ProductCard from "../components/section/productCard.vue";
 import UserAvatarInfo from "../components/section/userAvatarInfo.vue";
 import SpecialPackage from "../components/section/specialPackage.vue";
+import NewVersion from "../components/section/newVersion.vue";
 const customerCard = {
   image: {
     path: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoEprVQayH51WidWqyN8jnoaAczBilZFNPg0ePJFywkerljh-CwI7Jkt_sJinuS0A5qxQ&usqp=CAU",
@@ -59,7 +60,8 @@ const cardInfo = {
 
 <template>
   <div>
-    <UserAvatarInfo v-bind="customerInfo" />
-    <SpecialPackage v-bind="cardInfo" />
+    <!-- <UserAvatarInfo v-bind="customerInfo" /> -->
+    <!-- <SpecialPackage v-bind="cardInfo" /> -->
+    <NewVersion />
   </div>
 </template>
