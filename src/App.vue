@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import Navbar from "@/components/core/Navbar.vue";
+</script>
 
 <template>
   <main class="h-screen flex flex-col lg:flex-row">
