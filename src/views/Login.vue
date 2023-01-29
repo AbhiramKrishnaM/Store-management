@@ -35,7 +35,7 @@ const customerInfo = {
     path: "https://png.pngtree.com/png-vector/20220817/ourmid/pngtree-cartoon-man-avatar-vector-ilustration-png-image_6111064.png",
     alt: "avatar",
   },
-  username: "Ahamed-Geidt",
+  username: "Ahamed Geidt",
   address: "Montreal, Canada",
   product: {
     quantity: 30,
@@ -60,8 +60,8 @@ const cardInfo = {
 
 <template>
   <div>
-    <!-- <UserAvatarInfo v-bind="customerInfo" /> -->
-    <!-- <SpecialPackage v-bind="cardInfo" /> -->
+    <UserAvatarInfo v-bind="customerInfo" />
+    <SpecialPackage v-bind="cardInfo" />
     <NewVersion />
   </div>
 </template>
