@@ -9,6 +9,9 @@ module.exports = {
     extend: {
       colors: {
         light: "#FFFFFF",
+        icon: {
+          one: "#B6AAA6",
+        },
       },
     },
   },

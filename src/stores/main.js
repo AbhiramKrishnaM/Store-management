@@ -1,52 +1,52 @@
 import { defineStore } from "pinia";
 
 export const useMain = defineStore("main", () => {
-  const navigation = [
+  const links = [
     {
       id: 0,
       name: "Home",
       to: "/home",
-      activeIcon: "teenyicons:home-solid",
-      inactiveIcon: "teenyicons:home-outline",
+      icon: "ion:home",
     },
     {
       id: 1,
       name: "Products",
       to: "/products",
-      activeIcon: "teenyicons:bag-solid",
-      inactiveIcon: "teenyicons:bag-outline",
+      icon: "ion:bag-handle",
     },
     {
       id: 2,
       name: "Orders",
       to: "/orders",
-      activeIcon: "teenyicons:list-layout-solid",
-      inactiveIcon: "teenyicons:list-layout-outline",
+      icon: "ion:logo-dropbox",
     },
     {
       id: 3,
       name: "Analytics",
       to: "/analytics",
-      activeIcon: "teenyicons:pie-chart-alt-solid",
-      inactiveIcon: "teenyicons:pie-chart-alt-outline",
+      icon: "ion:md-list-box",
     },
     {
       id: 4,
       name: "Date",
       to: "/date",
-      activeIcon: "teenyicons:calendar-solid",
-      inactiveIcon: "teenyicons:calendar-outline",
+      icon: "ion:calendar",
     },
     {
       id: 5,
       name: "Settings",
       to: "/settings",
-      activeIcon: "teenyicons:cog-solid",
-      inactiveIcon: "teenyicons:cog-outline",
+      icon: "ion:md-settings",
     },
   ];
 
+  const logout = {
+    name: "Logout",
+    icon: "ion:log-out",
+  };
+
   return {
-    navigation,
+    links,
+    logout,
   };
 });
