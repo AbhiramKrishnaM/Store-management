@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 
-const main = defineStore("main", () => {
+export const useMain = defineStore("main", () => {
   const navigation = [
     {
       id: 0,
