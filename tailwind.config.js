@@ -5,7 +5,12 @@ module.exports = {
     fontFamily: {
       sans: ['"Poppins"', "sans-serif"],
     },
-    extend: {},
+
+    extend: {
+      colors: {
+        light: "#FFFFFF",
+      },
+    },
   },
   plugins: [],
 };
