@@ -6,7 +6,7 @@ const main = useMain();
 
 <template>
   <div
-    class="py-10 lg:py-20 lg:h-full flex flex-col items-center justify-between bg-red-600"
+    class="py-10 lg:py-20 lg:h-full flex flex-col items-center justify-between bg-red-600 lg:bg-transparent"
   >
     <ul class="hidden lg:flex flex-col items-center gap-12">
       <li v-for="link in main.links" :key="link.id">
