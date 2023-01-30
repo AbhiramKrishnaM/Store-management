@@ -11,6 +11,7 @@ module.exports = {
         light: "#FFFFFF",
         icon: {
           one: "#B6AAA6",
+          active: "#FDA554",
         },
       },
     },
