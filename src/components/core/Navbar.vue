@@ -10,24 +10,26 @@ const main = useMain();
   >
     <ul class="hidden lg:flex flex-col items-center gap-12">
       <li v-for="link in main.links" :key="link.id">
-        <router-link :to="'/'">
+        <router-link
+          :to="link.to"
+          class="p-2 text-icon-one hover:text-primary transition-colors relative block after-content-[''] after:w-0 after:bg-primary hover:after:w-1/3 [&.active-link]:after:w-1/3 after:absolute after:top-full after:h-[3px] after:left-1/2 after:translate-x-[-50%] after:transition-all"
+        >
           <Icon
             :icon="link.icon"
             :width="27"
             :height="27"
-            class="text-icon-one"
+            class="text-inherit hover:drop-shadow-xl"
           />
         </router-link>
       </li>
     </ul>
-
-    <button>
-      <Icon
-        :icon="main.logout.icon"
-        :width="27"
-        :height="27"
-        class="text-icon-one hidden lg:block"
-      />
-    </button>
+    <router-link
+      to="/login"
+      class="text-icon-one hover:text-primary transition-colors relative after-content-[''] after:w-0 after:bg-primary hover:after:w-1/3 [&.active-link]:after:w-1/3 after:absolute after:top-full after:h-[3px] after:left-1/2 after:translate-x-[-50%] after:transition-all"
+    >
+      <button>
+        <Icon :icon="main.logout.icon" :width="27" :height="27" class="" />
+      </button>
+    </router-link>
   </div>
 </template>

@@ -1,5 +1,9 @@
-<script setup></script>
+<script setup>
+import Login from "../components/section/login/index.vue";
+</script>
 
 <template>
-  <div></div>
+  <div>
+    <Login />
+  </div>
 </template>
