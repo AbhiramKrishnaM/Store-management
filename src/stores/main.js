@@ -5,7 +5,7 @@ export const useMain = defineStore("main", () => {
     {
       id: 0,
       name: "Home",
-      to: "/home",
+      to: "/",
       icon: "ion:home",
     },
     {
