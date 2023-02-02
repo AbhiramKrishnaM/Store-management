@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 // pages
-import Home from "@/views/HomeView.vue";
+import Landing from "@/views/Landing.vue";
 import Login from "@/views/Login.vue";
 import Products from "@/views/Products.vue";
 import Orders from "@/views/Orders.vue";
@@ -15,8 +15,8 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      name: "home",
-      component: Home,
+      name: "landing",
+      component: Landing,
     },
     {
       path: "/login",
