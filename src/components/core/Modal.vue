@@ -12,8 +12,10 @@ const props = defineProps({
   isOpen: { type: Boolean, required: true, default: false },
 });
 
+const emit = defineEmits(["closeModal"]);
+
 function closeModal() {
-  isOpen.value = false;
+  emit("closeModal");
 }
 </script>
 

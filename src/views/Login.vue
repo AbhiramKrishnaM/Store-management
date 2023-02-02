@@ -1,14 +1,15 @@
 <script setup>
-import Login from "../components/section/login/index.vue";
+import { ref } from "vue";
+import Login from "../components/section/Login.vue";
 import Modal from "../components/core/Modal.vue";
+
+const openModal = ref(true);
 </script>
 
 <template>
   <div>
-    <Modal>
-      <template v-slot:default>
-        <Login />
-      </template>
+    <Modal :is-open="openModal" @closeModal="() => (openModal = false)">
+      <Login />
     </Modal>
   </div>
 </template>
