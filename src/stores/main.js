@@ -28,8 +28,8 @@ export const useMain = defineStore("main", () => {
     },
     {
       id: 4,
-      name: "Date",
-      to: "/date",
+      name: "Events",
+      to: "/events",
       icon: "ion:calendar",
     },
     {
