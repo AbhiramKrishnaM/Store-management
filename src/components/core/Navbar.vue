@@ -6,13 +6,13 @@ const main = useMain();
 
 <template>
   <div
-    class="py-10 lg:py-20 lg:h-full flex flex-col items-center justify-between bg-red-600 lg:bg-transparent"
+    class="py-10 lg:py-20 lg:h-full flex flex-col items-center justify-between bg-red-600 lg:bg-transparent text-icon-one"
   >
     <ul class="hidden lg:flex flex-col items-center gap-12">
       <li v-for="link in main.links" :key="link.id">
         <router-link
           :to="link.to"
-          class="p-2 text-icon-one hover:text-primary transition-colors relative block after-content-[''] after:w-0 after:bg-primary hover:after:w-1/3 [&.active-link]:after:w-1/3 after:absolute after:top-full after:h-[3px] after:left-1/2 after:translate-x-[-50%] after:transition-all"
+          class="p-2 hover:text-primary transition-colors relative block after-content-[''] after:scale-x-0 after:bg-primary after:w-1/3 [&.active-link]:after:scale-x-100 after:absolute after:top-full after:h-[3px] after:left-1/2 after:translate-x-[-50%] after:transition-all after:origin-left hover:after:scale-x-100 after:rounded-full"
         >
           <Icon
             :icon="link.icon"
@@ -23,12 +23,14 @@ const main = useMain();
         </router-link>
       </li>
     </ul>
-    <router-link
-      to="/login"
-      class="text-icon-one hover:text-primary transition-colors relative after-content-[''] after:w-0 after:bg-primary hover:after:w-1/3 [&.active-link]:after:w-1/3 after:absolute after:top-full after:h-[3px] after:left-1/2 after:translate-x-[-50%] after:transition-all"
-    >
+    <router-link to="/login" class="hover:text-primary">
       <button>
-        <Icon :icon="main.logout.icon" :width="27" :height="27" class="" />
+        <Icon
+          :icon="main.logout.icon"
+          :width="27"
+          :height="27"
+          class="hover:drop-shadow-xl"
+        />
       </button>
     </router-link>
   </div>

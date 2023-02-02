@@ -9,7 +9,6 @@ module.exports = {
     extend: {
       colors: {
         light: "#FFFFFF",
-        primary: "#FEA24E",
 
         icon: {
           one: "#B6AAA6",
@@ -18,6 +17,7 @@ module.exports = {
         link: {
           active: "#FDA554",
         },
+        primary: "#FEA24E",
       },
     },
   },
