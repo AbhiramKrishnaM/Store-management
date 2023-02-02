@@ -18,19 +18,14 @@ const main = useMain();
             :icon="link.icon"
             :width="27"
             :height="27"
-            class="text-inherit hover:drop-shadow-xl"
+            class="text-inherit"
           />
         </router-link>
       </li>
     </ul>
     <router-link to="/login" class="hover:text-primary">
       <button>
-        <Icon
-          :icon="main.logout.icon"
-          :width="27"
-          :height="27"
-          class="hover:drop-shadow-xl"
-        />
+        <Icon :icon="main.logout.icon" :width="27" :height="27" />
       </button>
     </router-link>
   </div>
