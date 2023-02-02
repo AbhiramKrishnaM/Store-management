@@ -1,6 +1,13 @@
 import { createRouter, createWebHistory } from "vue-router";
+
+// pages
 import Home from "@/views/HomeView.vue";
 import Login from "@/views/Login.vue";
+import Products from "@/views/Products.vue";
+import Orders from "@/views/Orders.vue";
+import Analytics from "@/views/Analytics.vue";
+import Events from "@/views/Events.vue";
+import Settings from "@/views/Settings.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,6 +22,31 @@ const router = createRouter({
       path: "/login",
       name: "login",
       component: Login,
+    },
+    {
+      path: "/products",
+      name: "products",
+      component: Products,
+    },
+    {
+      path: "/orders",
+      name: "orders",
+      component: Orders,
+    },
+    {
+      path: "/analytics",
+      name: "analytics",
+      component: Analytics,
+    },
+    {
+      path: "/events",
+      name: "events",
+      component: Events,
+    },
+    {
+      path: "/settings",
+      name: "settings",
+      component: Settings,
     },
     // {
     //   path: '/about',
