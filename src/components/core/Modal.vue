@@ -1,11 +1,23 @@
+<script setup>
+import { ref, defineExpose } from "vue";
+import {
+  TransitionRoot,
+  TransitionChild,
+  Dialog,
+  DialogPanel,
+  DialogTitle,
+} from "@headlessui/vue";
+
+const props = defineProps({
+  isOpen: { type: Boolean, required: true, default: false },
+});
+
+function closeModal() {
+  isOpen.value = false;
+}
+</script>
+
 <template>
-  <button
-    type="button"
-    @click="openModal"
-    class="rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-  >
-    Open dialog
-  </button>
   <TransitionRoot appear :show="isOpen" as="template">
     <Dialog as="div" @close="closeModal">
       <TransitionChild
@@ -36,9 +48,6 @@
             <DialogPanel
               class="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all"
             >
-              <slot></slot>
-              <!-- slot for forms -->
-
               <div class="mt-4">
                 <button
                   type="button"
@@ -47,6 +56,9 @@
                 >
                   <Icon icon="ic:outline-close" />
                 </button>
+
+                <!-- slot for forms -->
+                <slot></slot>
               </div>
             </DialogPanel>
           </TransitionChild>
@@ -55,23 +67,3 @@
     </Dialog>
   </TransitionRoot>
 </template>
-
-<script setup>
-import { ref, defineExpose } from "vue";
-import {
-  TransitionRoot,
-  TransitionChild,
-  Dialog,
-  DialogPanel,
-  DialogTitle,
-} from "@headlessui/vue";
-
-const isOpen = ref(true);
-
-function closeModal() {
-  isOpen.value = false;
-}
-function openModal() {
-  isOpen.value = true;
-}
-</script>
