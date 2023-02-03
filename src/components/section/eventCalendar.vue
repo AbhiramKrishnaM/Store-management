@@ -1,10 +1,10 @@
 <template>
-  <div class="shadow-2xl w-96 h-[560px] rounded-2xl">
+  <div class="shadow-2xl rounded-2xl">
     <div>
       <img
         :src="image.path"
         :alt="image.alt"
-        class="w-56 h-72 ml-auto rounded-[50px]"
+        class="w-56 h-56 ml-auto rounded-full"
       />
     </div>
     <div class="p-3 ml-3">

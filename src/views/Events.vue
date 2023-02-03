@@ -1,10 +1,10 @@
 <template>
-  <EventCalendart v-bind="data" />
+  <EventCalendar v-bind="data" />
 </template>
 
 <script setup>
 import { ref } from "vue";
-import EventCalendart from "../components/section/eventCalendar.vue";
+import EventCalendar from "../components/section/eventCalendar.vue";
 
 const data = {
   image: {
