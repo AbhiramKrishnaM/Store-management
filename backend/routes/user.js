@@ -6,7 +6,7 @@ const {
   registerUser,
   loginUser,
   updateUser,
-  deleteUser,
+  dropUser,
 } = require("../controller/User.js");
 
 const router = express.Router();
@@ -17,6 +17,6 @@ router.post("/login", loginUser);
 
 router.put("/update", updateUser);
 
-router.delete("/destroy", deleteUser);
+router.delete("/destroy", dropUser);
 
 module.exports = router;
