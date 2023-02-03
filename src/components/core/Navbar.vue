@@ -1,12 +1,15 @@
 <script setup>
 import { useMain } from "@/stores/main.js";
 
+// Responsive navbar
+import MobileNavbar from "@/components/core/MobileNavbar.vue";
+
 const main = useMain();
 </script>
 
 <template>
   <div
-    class="py-10 lg:py-20 lg:h-full flex flex-col items-center justify-between bg-red-600 lg:bg-transparent text-icon-one"
+    class="py-7 w-full lg:py-20 lg:h-full flex flex-col items-center justify-between lg:bg-transparent text-icon-one"
   >
     <ul class="hidden lg:flex flex-col items-center gap-12">
       <li v-for="link in main.links" :key="link.id">
@@ -30,5 +33,6 @@ const main = useMain();
     </router-link>
 
     <!-- mobile responive -->
+    <MobileNavbar />
   </div>
 </template>
