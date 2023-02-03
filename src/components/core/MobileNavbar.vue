@@ -2,10 +2,10 @@
   <div
     class="w-full flex flex-wrap items-center justify-between mx-auto lg:hidden"
   >
-    <a href="https://flowbite.com/" class="flex items-center w-14 h-14">
+    <a href="https://flowbite.com/" class="flex items-center">
       <img
         src="https://flowbite.com/docs/images/logo.svg"
-        class="h-6 mr-3 sm:h-9"
+        class="w-10 h-10 mr-3"
         alt="Flowbite Logo"
       />
       <span class="self-center text-xl font-semibold whitespace-nowrap">
