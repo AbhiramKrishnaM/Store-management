@@ -2,20 +2,20 @@
   <div
     class="w-full flex flex-wrap items-center justify-between mx-auto lg:hidden"
   >
-    <a href="https://flowbite.com/" class="flex items-center">
+    <a href="https://flowbite.com/" class="flex items-center w-14 h-14">
       <img
         src="https://flowbite.com/docs/images/logo.svg"
         class="h-6 mr-3 sm:h-9"
         alt="Flowbite Logo"
       />
       <span class="self-center text-xl font-semibold whitespace-nowrap">
-        Flowbite
+        Stores
       </span>
     </a>
     <div class="flex items-center lg:order-2">
       <button
         type="button"
-        class="flex mr-3 text-sm bg-gray-800 rounded-full lg:mr-0 focus:ring-4 focus:ring-gray-300"
+        class="flex mr-3 text-sm rounded-full w-14 h-14 lg:mr-0"
         id="user-menu-button"
         aria-expanded="false"
         data-dropdown-toggle="user-dropdown"
@@ -23,8 +23,8 @@
       >
         <span class="sr-only">Open user menu</span>
         <img
-          class="w-8 h-8 rounded-full"
-          src="@/assets/images/example-test.jpg"
+          class="w-full h-full object-contain rounded-full"
+          src="@/assets/images/avatar.svg"
           alt="user photo"
         />
       </button>
@@ -79,7 +79,7 @@
       >
         <span class="sr-only">Open main menu</span>
         <svg
-          class="w-6 h-6"
+          class="w-10 h-10"
           aria-hidden="true"
           fill="currentColor"
           viewBox="0 0 20 20"
