@@ -4,7 +4,7 @@
 
 <script setup>
 import { ref } from "vue";
-import EventCalendar from "../components/section/eventCalendar.vue";
+import EventCalendar from "@/components/section/EventCalendar.vue";
 
 const data = {
   image: {
