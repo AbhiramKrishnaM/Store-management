@@ -119,10 +119,10 @@
 
 <script setup>
 import { onMounted } from "vue";
-import { initModals } from "flowbite";
+import { initDropdowns } from "flowbite";
 
 // initialize components based on data attribute selectors
 onMounted(() => {
-  initModals();
+  initDropdowns();
 });
 </script>
