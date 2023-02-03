@@ -1,3 +1,12 @@
+<script setup>
+import { onMounted } from "vue";
+import { initDropdowns } from "flowbite";
+
+// initialize components based on data attribute selectors
+onMounted(() => {
+  initDropdowns();
+});
+</script>
 <template>
   <nav class="w-full bg-white border-gray-200 px-2 sm:px-4 rounded lg:hidden">
     <div class="flex flex-wrap items-center justify-between mx-auto">
@@ -141,5 +150,3 @@
     </div>
   </nav>
 </template>
-
-<script setup></script>
