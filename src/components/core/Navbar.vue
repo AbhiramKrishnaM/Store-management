@@ -23,10 +23,12 @@ const main = useMain();
         </router-link>
       </li>
     </ul>
-    <router-link to="/login" class="hover:text-primary">
+    <router-link to="/login" class="hover:text-primary hidden lg:block">
       <button>
         <Icon :icon="main.logout.icon" :width="27" :height="27" />
       </button>
     </router-link>
+
+    <!-- mobile responive -->
   </div>
 </template>
