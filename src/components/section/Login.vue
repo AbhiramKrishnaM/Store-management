@@ -1,6 +1,4 @@
-<script setup>
-// Login
-</script>
+<script setup></script>
 <template>
   <div class="flex justify-center">
     <div class="w-80">

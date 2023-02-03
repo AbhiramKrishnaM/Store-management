@@ -1,5 +1,11 @@
+<script setup>
+const props = defineProps({
+  image: Object,
+  text: String,
+});
+</script>
 <template>
-  <div class="shadow-2xl w-full md:11/12 lg:w-5/12 rounded-2xl">
+  <div class="shadow-2xl w-full md:11/12 lg:w-4/12 rounded-2xl">
     <div>
       <img
         :src="image.path"
@@ -28,11 +34,3 @@
     </div>
   </div>
 </template>
-
-<script setup>
-// Event Calendar
-const props = defineProps({
-  image: Object,
-  text: String,
-});
-</script>

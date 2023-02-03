@@ -1,5 +1,4 @@
 <script setup>
-// User avatar
 const props = defineProps({
   image: Object,
   username: String,

@@ -1,5 +1,4 @@
 <script setup>
-// Special
 const props = defineProps({
   image: Object,
   title: String,
