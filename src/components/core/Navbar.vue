@@ -9,7 +9,7 @@ const main = useMain();
 
 <template>
   <div
-    class="py-7 w-full lg:py-20 lg:h-full flex flex-col items-center justify-between lg:bg-transparent text-icon-one"
+    class="p-4 w-full lg:py-20 lg:h-full flex flex-col items-center justify-between lg:bg-transparent text-icon-one"
   >
     <ul class="hidden lg:flex flex-col items-center gap-12">
       <li v-for="link in main.links" :key="link.id">
