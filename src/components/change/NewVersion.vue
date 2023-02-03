@@ -1,3 +1,6 @@
+<script setup>
+// New version
+</script>
 <template>
   <div class="text-center bg-gray-100 w-80 rounded-xl py-6">
     <svg

@@ -1,4 +1,5 @@
 <script setup>
+// Product
 const props = defineProps({
   image: Object,
   product: Object,

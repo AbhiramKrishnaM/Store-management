@@ -1,3 +1,11 @@
+<script setup>
+// Special
+const props = defineProps({
+  image: Object,
+  title: String,
+  subtitle: String,
+});
+</script>
 <template lang="">
   <div>
     <div class="flex bg-red-50 p-10 rounded-xl">
@@ -19,10 +27,3 @@
     </div>
   </div>
 </template>
-<script setup>
-const props = defineProps({
-  image: Object,
-  title: String,
-  subtitle: String,
-});
-</script>

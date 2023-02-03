@@ -30,6 +30,7 @@
 </template>
 
 <script setup>
+// Event Calendar
 const props = defineProps({
   image: Object,
   text: String,
