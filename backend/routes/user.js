@@ -1,19 +1,22 @@
 /** User registration, authentication, deletion, updation   */
-
 const express = require("express");
+
+// controller
+const {
+  registerUser,
+  loginUser,
+  updateUser,
+  deleteUser,
+} = require("../controller/User.js");
 
 const router = express.Router();
 
-router.post("/register", (req, res) => {
-  res.send("User registration end");
-});
+router.post("/register", registerUser);
 
-router.post("/login", (req, res) => {
-  res.send("User login end");
-});
+router.post("/login", loginUser);
 
-router.put("/update", (req, res) => {
-  res.send("User details update end");
-});
+router.put("/update", updateUser);
+
+router.delete("/destroy", deleteUser);
 
 module.exports = router;
