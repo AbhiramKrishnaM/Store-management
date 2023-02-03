@@ -5,6 +5,7 @@ const express = require("express");
 
 // routes
 const test = require("./routes/Test.js");
+const user = require("./routes/User.js");
 
 // server
 const app = express();
@@ -17,6 +18,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // use routes
 app.use("/test", test);
+
+app.use("/user", user);
 
 const port = process.env.APP_PORT || 4001;
 
