@@ -8,8 +8,6 @@ const openModal = ref(true);
 
 <template>
   <div>
-    <Modal :is-open="openModal" @closeModal="() => (openModal = false)">
-      <Login />
-    </Modal>
+    <Login />
   </div>
 </template>
