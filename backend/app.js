@@ -28,8 +28,8 @@ app.use("/user", user);
 // server listen and route
 const port = process.env.APP_PORT || 4001;
 
-startSequelize();
-
 app.listen(port, () => {
+  startSequelize();
+
   console.log("Application listening on port ", port);
 });
