@@ -8,7 +8,6 @@ RUN npm install
 
 COPY vite.config.js ./
 
-
-EXPOSE 8080
+EXPOSE 3000
 
 CMD [ "npm", "run","dev" ]
