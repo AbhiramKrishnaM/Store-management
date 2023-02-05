@@ -4,8 +4,8 @@ services:
   db:
     image: postgres
     environment:
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: storage-mngmnt
+      POSTGRES_USER: storage-mngmnt
       POSTGRES_DB: store-mngmnt
     volumes:
       - ./pgdata:/var/lib/postgresql/data\
