@@ -9,4 +9,4 @@ services:
   backend:
     extends:
       file: backend/docker-compose.yml
-    service: backend
+    service: web
