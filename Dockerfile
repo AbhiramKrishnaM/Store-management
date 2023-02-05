@@ -6,7 +6,7 @@ COPY package*.json ./
 
 RUN npm install
 
-COPY vite.config.js ./
+COPY . .
 
 EXPOSE 3000
 
