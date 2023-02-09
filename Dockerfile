@@ -4,10 +4,12 @@ WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
+COPY vite.config.js ./
+
+RUN npm i
 
 COPY . .
 
 EXPOSE 3000
 
-CMD [ "npm", "run","dev" ]
+CMD [ "npm","run","dev" ]

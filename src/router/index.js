@@ -8,6 +8,7 @@ import Orders from "@/views/Orders.vue";
 import Analytics from "@/views/Analytics.vue";
 import Events from "@/views/Events.vue";
 import Settings from "@/views/Settings.vue";
+import Registration from "@/views/Registration.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,6 +23,11 @@ const router = createRouter({
       path: "/login",
       name: "login",
       component: Login,
+    },
+    {
+      path: "/registration",
+      name: "Registration",
+      component: Registration,
     },
     {
       path: "/products",
