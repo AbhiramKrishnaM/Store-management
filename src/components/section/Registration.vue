@@ -62,6 +62,7 @@
         <button
           type="submit"
           class="flex justify-center align-middle text-white bg-blue-700 font-medium rounded-lg text-sm text-center w-full py-2"
+          @click="$emit('submit')"
         >
           Continue
           <Icon icon="ic:outline-arrow-right-alt" class="ml-3" width="20" />
@@ -70,3 +71,5 @@
     </div>
   </div>
 </template>
+
+<script setup></script>
